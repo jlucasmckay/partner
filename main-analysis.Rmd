@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = F, collapse = T)
+knitr::opts_chunk$set(echo = F, collapse = T, message = F, warning = F)
 ```
 
 ## Objective
@@ -15,7 +15,14 @@ This document contains the primary analysis routines for the PARTNER study (ME H
 
 ## Demographics
 
-```{r}
-
+```{r, results='asis'}
+# load data
+source("R/load.R")
+# create table
+demo_tab = arsenal::tableby(~.,baseline_data |>
+                              select(age,sex,moca_total) |> 
+                              rename(Age = age, Sex = sex, MoCA = moca_total)) |>
+  summary(digits=1)
+demo_tab
 ```
 
