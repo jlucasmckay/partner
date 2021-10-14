@@ -24,5 +24,9 @@ demo_tab = arsenal::tableby(~.,baseline_data |>
                               rename(Age = age, Sex = sex, MoCA = moca_total)) |>
   summary(digits=1)
 demo_tab
+
+demo_tab_df = demo_tab |> as.data.frame()
+names(demo_tab_df)[1] <- "Variable"
+demo_tab_df |> write_csv("demo_tab.csv",na="")
 ```
 
