@@ -41,3 +41,12 @@ vignettes/*.pdf
 # DATA FILES
 *.csv
 
+# Notes
+scraps.r
+scraps.R
+
+# Desktop file lists
+.DS_Store
+.DS_store
+
+
