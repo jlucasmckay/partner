@@ -1,0 +1,21 @@
+---
+title: "PARTNER Analysis"
+author: "J. Lucas McKay"
+date: "10/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, collapse = T)
+```
+
+## Objective
+
+This document contains the primary analysis routines for the PARTNER study (ME Hackney, PI).
+
+## Demographics
+
+```{r}
+
+```
+
