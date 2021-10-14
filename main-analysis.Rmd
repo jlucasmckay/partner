@@ -2,7 +2,7 @@
 title: "PARTNER Analysis"
 author: "J. Lucas McKay"
 date: "10/14/2021"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
